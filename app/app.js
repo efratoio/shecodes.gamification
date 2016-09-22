@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+var app =angular.module('myApp', [
   'ngRoute',
   'myApp.milestones',
   'myApp.stage',
@@ -12,7 +12,7 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 
   $routeProvider.otherwise({redirectTo: '/milestones'});
 }]);
-myApp.controller('main', function($http) {
+app.controller('main', function($http) {
   var ctrl = this;
   ctrl.stages = [
       {
