@@ -1,0 +1,205 @@
+@keyframes slideleft {
+  from { background-position: 0%; }
+  to { background-position: 90000%; }
+}
+
+/* sparkle  */
+
+
+@keyframes glowCycle{
+
+
+}
+
+
+
+@keyframes glow {
+    to {
+        background-color: #ff69b4;
+    }
+}
+html, body{
+	height: 100%;
+	width: 100%;
+
+}
+
+#container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #abefcd;
+  text-align: left;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align:middle;
+  top:0;
+
+}
+
+
+#background {
+
+  height: 100%;
+  width: 300%;
+  background-image: url("../img/landscape-sunset-blue-sunrise.jpg");
+  background-repeat:repeat-x;
+  background-size: auto 100% ;
+  /*animation: slideleft 600s infinite linear;*/
+
+}
+
+
+@-webkit-keyframes rattle {
+   0% {
+    -webkit-transform: translateX(-2px); 
+     letter-spacing: -0.012em;
+   }
+  
+  25% {
+    -webkit-transform: translateY(-2px) rotate(-1deg);
+    font-size: 6.9999em;
+  }
+  
+  50% {
+    -webkit-transform: translateX(1px);
+    text-shadow: 0 1px 0 #000, 
+      1px 1px 0 $bgColor,
+      2px 2px 0 $color,
+      -3px -5px 0 $bgColor,
+      -4px -6px 0 rgba($color, 0.6);
+  }
+  
+  75% {
+   -webkit-transform: translateY(1px);
+  }
+  
+  100% {
+   -webkit-transform: translateY(-2px); 
+  }
+}
+
+md-button #button1div .rattlecls{
+ -webkit-animation: rattle 0.8s infinite alternate; 
+
+ -moz-animation: rattle 0.8s infinite alternate; 
+ -moz-animation-delay: .5s;
+  animation: rattle 0.8s infinite alternate; 
+  animation-delay: .5s;
+}
+
+#button1 {
+	position: absolute;
+	top:30%;
+	left:100px;
+  	border-radius: 60%;
+  	animation: glow .7s ease-in;
+
+}
+
+
+#button2 {
+	position: absolute;
+	top:20%;
+	left:400px;
+  	border-radius: 70%;
+  	animation: glow .5s linear;
+  	animation-delay: .5s;
+}
+
+
+#button3 {
+	position: absolute;
+	top:40%;
+	left:550px;
+  	border-radius: 50%;
+  	animation: glow .8s ease-in;
+  	animation-delay: 1s;
+}
+
+
+#button4 {
+	position: absolute;
+	top:60%;
+	left:400px;
+  	border-radius: 70%;
+  	animation: glow .4s ease-out;
+  	animation-delay: 1.7s;  	
+}
+
+#button5 {
+	position: absolute;
+	top:70%;
+	left:600px;
+  	border-radius: 50%;
+  	animation: glow .6s ease-out;
+  	animation-delay: 2s;  
+}
+
+
+#button6 {
+	position: absolute;
+	top:30%;
+	left:800px;
+  	border-radius: 50%;
+  	animation: glow .3s ease-out;
+  	animation-delay: 2.4s;  
+}
+
+
+#button7 {
+	position: absolute;
+	top:80%;
+	left:900px;
+  	border-radius: 50%;
+    animation: glow .6s ease-out;
+  	animation-delay: 3s;  
+
+
+}
+
+
+#button8 {
+	position: absolute;
+	top:60%;
+	left:1200px;
+  	border-radius: 50%;
+    animation: glow .6s ease-in;
+  	animation-delay: 3.6s;  
+
+}
+
+#button9 {
+	position: absolute;
+	top:30%;
+	left:1400px;
+  	border-radius: 80%;
+}
+
+
+#button10 {
+	position: absolute;
+	top:20%;
+	left:1700px;
+  	border-radius: 50%;
+}
+
+
+#button11 {
+	position: absolute;
+	top:40%;
+	left:2050px;
+ 	border-radius: 50%;
+}
+
+
+#button12 {
+	position: absolute;
+	top:50%;
+	left:2400px;
+ 	border-radius: 60%;
+
+}
